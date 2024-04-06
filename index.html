@@ -5,9 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZEN</title>
 </head>
+
 <body>
   <!-- Шапка сайта -->
-  <header>Шапка сайта</header>
+  <header class="header">
+    <div class="header__wrapper">
+      <button class="header__logo" type="button" id="logo">
+        <img src="assets/icons/logo.svg" alt="ZEN">
+      </button>
+      <ul class="menu" id="menu">
+        <!-- Item 1   -->
+        <li class="menu__item">
+          <a href="#download">Download</a>
+        </li>
+        <!-- Item 2   -->
+        <li class="menu__item">
+          <a href="#warranty">Warranty</a>
+        </li>
+        <!-- Item 3   -->
+        <li class="menu__item">
+          <a href="#care">Care</a>
+        </li>
+          <!-- Item 4   -->
+        <li class="menu__item">
+          <a href="#cashback">Cashback</a>
+        </li>
+          <!-- Item 5   -->
+        <li class="menu__item">
+          <a href="#clients">Clients</a>
+        </li>
+      </ul>
+      <div class="header__actions">
+        <!-- Lang -->
+        <select class="header__lang" id="lang">
+          <option value="en">EN</option>
+          <option value="ru">RU</option>
+        </select>
+        <!-- Theme -->
+        <button class="header__theme" type="button" id="theme">
+          <img src="assets/icons/moon.svg" alt="Moon">
+        </button>
+        <!-- Burger -->
+        <button type="header__burger" type="button" id="burger">
+          <img src="assets/icons/moon.svg" alt="Moon">
+        </button>
+      </div>
+    </div>
+  </header>
   <!-- Секция 1  -->
   <section class="download" id="download">
     <div class="download__wrapper">
@@ -72,9 +116,11 @@
     <div class="cashback__wrapper">
       <div class="cashback__text-block">
         <h2 class="cashback__title">and cashback!</h2>
-        <p class="cashback__copy">It saves a little bit of money while you're shopping, but in many cases it takes ages to get anything out of it.</p>
+        <p class="cashback__copy">It saves a little bit of money while you're shopping, but in many cases it takes ages
+          to get anything out of it.</p>
         <p class="cashback__copy">We gave it a thought and made cashback way more friendly.</p>
-        <p class="cashback__copy">Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account right after the purchase.</p>
+        <p class="cashback__copy">Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account
+          right after the purchase.</p>
         <button class="button" type="button" id="order-open">Order a consultation</button>
       </div>
     </div>
@@ -121,4 +167,5 @@
   <!-- подвал сайта -->
   <footer>Подвал сайта</footer>
 </body>
+
 </html>
