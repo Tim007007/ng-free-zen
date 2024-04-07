@@ -7,7 +7,50 @@
 </head>
 <body>
   <!-- Шапка сайта -->
-  <header>Шапка сайта</header>
+  <header class="header">
+    <div class="header__wrapper">
+      <button class="header__logo" type="button" id="logo">
+        <img src="assets/icons/logo.svg" alt="ZEN">
+      </button>
+      <ul class="menu" id="menu">
+        <!-- Item 1   -->
+        <li class="menu__item">
+          <a href="#download">Download</a>
+        </li>
+        <!-- Item 2   -->
+        <li class="menu__item">
+          <a href="#warranty">Warranty</a>
+        </li>
+        <!-- Item 3   -->
+        <li class="menu__item">
+          <a href="#care">Care</a>
+        </li>
+          <!-- Item 4   -->
+        <li class="menu__item">
+          <a href="#cashback">Cashback</a>
+        </li>
+          <!-- Item 5   -->
+        <li class="menu__item">
+          <a href="#clients">Clients</a>
+        </li>
+      </ul>
+      <div class="header__actions">
+        <!-- Lang -->
+        <select class="header__lang" id="lang">
+          <option value="en">EN</option>
+          <option value="ru">RU</option>
+        </select>
+        <!-- Theme -->
+        <button class="header__theme" type="button" id="theme">
+          <img src="assets/icons/moon.svg" alt="Moon" />
+        </button>
+        <!-- Burger -->
+        <button type="header__burger" type="button" id="burger">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
   <!-- Секция 1  -->
   <section class="download" id="download">
     <div class="download__wrapper">
@@ -72,9 +115,11 @@
     <div class="cashback__wrapper">
       <div class="cashback__text-block">
         <h2 class="cashback__title">and cashback!</h2>
-        <p class="cashback__copy">It saves a little bit of money while you're shopping, but in many cases it takes ages to get anything out of it.</p>
+        <p class="cashback__copy">It saves a little bit of money while you're shopping, but in many cases it takes ages
+          to get anything out of it.</p>
         <p class="cashback__copy">We gave it a thought and made cashback way more friendly.</p>
-        <p class="cashback__copy">Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account right after the purchase.</p>
+        <p class="cashback__copy">Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account
+          right after the purchase.</p>
         <button class="button" type="button" id="order-open">Order a consultation</button>
       </div>
     </div>
@@ -85,35 +130,35 @@
       <ul class="clients__brands">
         <!-- Brand 1 -->
         <li class="clients__brand">
-          <img src="./brands/1.svg" alt="Brand 1" />
+          <img src="./assets/brands/1.svg" alt="Brand 1" />
         </li>
         <!-- Brand 2 -->
         <li class="clients__brand">
-          <img src="./brands/2.svg" alt="Brand 2" />
+          <img src="./assets/brands/2.svg" alt="Brand 2" />
         </li>
         <!-- Brand 3 -->
         <li class="clients__brand">
-          <img src="./brands/3.svg" alt="Brand 3" />
+          <img src="./assets/brands/3.svg" alt="Brand 3" />
         </li>
         <!-- Brand 4 -->
         <li class="clients__brand">
-          <img src="./brands/4.svg" alt="Brand 4" />
+          <img src="./assets/brands/4.svg" alt="Brand 4" />
         </li>
         <!-- Brand 5 -->
         <li class="clients__brand">
-          <img src="./brands/5.svg" alt="Brand 5" />
+          <img src="./assets/brands/5.svg" alt="Brand 5" />
         </li>
         <!-- Brand 6 -->
         <li class="clients__brand">
-          <img src="./brands/6.svg" alt="Brand 6" />
+          <img src="./assets/brands/6.svg" alt="Brand 6" />
         </li>
         <!-- Brand 7 -->
         <li class="clients__brand">
-          <img src="./brands/7.svg" alt="Brand 7" />
+          <img src="./assets/brands/7.svg" alt="Brand 7" />
         </li>
         <!-- Brand 8 -->
         <li class="clients__brand">
-          <img src="./brands/8.svg" alt="Brand 8" />
+          <img src="./assets/brands/8.svg" alt="Brand 8" />
         </li>
       </ul>
     </div>
