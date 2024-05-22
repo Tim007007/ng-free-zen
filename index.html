@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZEN</title>
-<link rel="stylesheet" href="./Css/reset.css">
-  <!-- <link rel="stylesheet" href="/Css/fonts.css"> -->
-  <!-- <link rel="stylesheet" href="/Css/wars.css"> -->
+  <link rel="stylesheet" href="./Css/reset.css" />
+  <link rel="stylesheet" href="./Css/menu.css" />
+  <link rel="stylesheet" href="./Css/header.css" />
+  <link rel="stylesheet" href="./Css/burger.css" />
 </head>
 
 <body>
@@ -14,7 +16,7 @@
   <header class="header">
     <div class="header__wrapper">
       <button class="header__logo" type="button" id="logo">
-        <img src="assets/icons/logo.svg" alt="ZEN">
+        <img src="assets/icons/logo.svg" alt="ZEN" />
       </button>
       <nav class="header_nav">
         <ul class="menu" id="menu">
@@ -42,10 +44,13 @@
       </nav>
       <div class="header__actions">
         <!-- Lang -->
-        <select class="header__lang" id="lang">
-          <option value="en">EN</option>
-          <option value="ru">RU</option>
-        </select>
+        <label class="header__lang"> 
+          <img src="./assets/icons/arrow.svg">
+          <select id="lang">
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+          </select>
+        </label>
         <!-- Theme -->
         <button class="header__theme" type="button" id="theme">
           <img src="assets/icons/moon.svg" alt="Moon" />
@@ -76,7 +81,7 @@
         </div>
       </div>
       <div class="download__image-block">
-        <img src="./assets/images/1.jpg" alt="Bag and device">
+        <img src="./assets/images/1.jpg" alt="Bag and device" />
       </div>
     </div>
   </section>
@@ -176,7 +181,7 @@
     <div class="modal_body">
       <!-- Close -->
       <button class="modal__close" id="close">
-        <img src="assets/icons/close.svg" alt="close">
+        <img src="assets/icons/close.svg" alt="close" />
       </button>
       <!-- Title -->
       <h3 class="modal__title">Order a consultation</h3>
@@ -297,7 +302,7 @@
           <!-- Item 1 -->
           <li class="column-item">
             <a href="https://example.com">
-              <img src="/assets/icons/in.svg" alt="Linkedin">
+              <img src="/assets/icons/in.svg" alt="Linkedin" />
             </a>
           </li>
         </ul>
@@ -316,7 +321,7 @@
     <!-- Info -->
     <div class="footer__info">
       <a class="footer__logo" href="http://example.com">
-        <img src="./assets/icons/logo2.svg" alt="logo">
+        <img src="./assets/icons/logo2.svg" alt="logo" />
       </a>
       <p class="footer__copy">ZEN is a licensed financial institution under the supervision of the Central Bank of
         Lithuania approved by European Banking Authority for 31 countries.</p>
@@ -326,9 +331,10 @@
       <p class="footer__copy">Company address: Mėsinių g. 5, LT-01133, Vilnius, Lithuania.</p>
       <p class="footer__copy">Sales Office: ul. Emilii Plater 53, 00-113 Warsaw, Poland.</p>
       <a class="footer__dev" href="http://example.com">
-        <img src="./assets/icons/develepor.svg" alt="Developer">
+        <img src="./assets/icons/develepor.svg" alt="Developer" />
       </a>
     </div>
   </footer>
 </body>
+
 </html>
