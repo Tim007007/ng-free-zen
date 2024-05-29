@@ -1,0 +1,41 @@
+.warranty {
+  padding: 30px 15px;
+}
+
+.warranty__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* warranty__text-block {} */
+
+.warranty__title {
+font-weight: 700;
+color: aqua;
+/* margin-bottom: 20px; */
+}
+
+@media (min-width: 768px) {
+  .warranty__title {
+    font-size: 40px;
+    color: red;
+  }
+}
+@media (min-width: 900px) {
+  .warranty__title {
+    font-size: 80px;
+    color: orange;
+  }
+}
+
+.warranty__copy {
+  margin-top: 10px;
+}
+
+.warranty__image-block {
+  height: 72vh;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  overflow: hidden;
+}
