@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="./Css/header.css" />
   <link rel="stylesheet" href="./Css/burger.css" />
   <link rel="stylesheet" href="./Css/download.css" />
+  <link rel="stylesheet" href="./Css/cashback.css" />
+  <link rel="stylesheet" href="./Css/column.css" />
+  <link rel="stylesheet" href="./Css/cashback.css" />
+  <link rel="stylesheet" href="./Css/warranty.css" />
 </head>
 
 <body>
@@ -133,7 +137,7 @@
         <p class="cashback__copy">We gave it a thought and made cashback way more friendly.</p>
         <p class="cashback__copy">Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account
           right after the purchase.</p>
-        <button class="button" type="button" id="order-open">Order a consultation</button>
+        <button class="cashback__button" type="button" id="order-open">Order a consultation</button>
       </div>
     </div>
   </section>
@@ -177,52 +181,8 @@
     </div>
   </section>
   <!-- подвал сайта -->
-  <footer>Подвал сайта</footer>
-  <!-- Модальное окно -->
-  <div class="modal" id="modal">
-    <div class="modal_body">
-      <!-- Close -->
-      <button class="modal__close" id="close">
-        <img src="assets/icons/close.svg" alt="close" />
-      </button>
-      <!-- Title -->
-      <h3 class="modal__title">Order a consultation</h3>
-      <!-- Form -->
-      <form class="form" id="order">
-        <!-- Name -->
-        <label class="form__input">
-          <span>Name</span>
-          <input type="text" id="name">
-        </label>
-        <!-- Tel. -->
-        <label class="form__input">
-          <span>Tel.</span>
-          <input type="text" id="name">
-        </label>
-        <!-- E-mail -->
-        <label class="form__input">
-          <span>E-mail</span>
-          <input type="text" id="name">
-        </label>
-        <!-- Connection  -->
-        <label class="form__select">
-          <span>Connection</span>
-          <select id="Connection">
-            <option value="telegram">Telegram</option>
-            <option value="whatsapp">WhatsApp</option>
-          </select>
-        </label>
-        <!-- Privacy policy  -->
-        <label class="form__checkbox">
-          <input type="checkbox" id="policy">
-          <a href="https://example.com/policy" target="_blank">Privacy policy</a>
-        </label>
-        <!-- Submit -->
-        <button class="form__submit">Submit</button>
-      </form>
-    </div>
-  </div>
-  <footer class="footer">
+  <footer class="footer" id="footer">
+    <div class="footer__wrapper"></div>
     <!-- Columns -->
     <div class="footer__columns">
       <!-- Column 1 -->
@@ -319,9 +279,9 @@
           </li>
         </ul>
       </div>
-    </div>
+      </div>
     <!-- Info -->
-    <div class="footer__info">
+     <div class="footer__info">
       <a class="footer__logo" href="http://example.com">
         <img src="./assets/icons/logo2.svg" alt="logo" />
       </a>
@@ -337,6 +297,50 @@
       </a>
     </div>
   </footer>
+  <!-- Модальное окно -->
+  <div class="modal" id="modal">
+    <div class="modal_body">
+      <!-- Close -->
+      <button class="modal__close" id="close">
+        <img src="assets/icons/close.svg" alt="close" />
+      </button>
+      <!-- Title -->
+      <h3 class="modal__title">Order a consultation</h3>
+      <!-- Form -->
+      <form class="form" id="order">
+        <!-- Name -->
+        <label class="form__input">
+          <span>Name</span>
+          <input type="text" id="name">
+        </label>
+        <!-- Tel. -->
+        <label class="form__input">
+          <span>Tel.</span>
+          <input type="text" id="name">
+        </label>
+        <!-- E-mail -->
+        <label class="form__input">
+          <span>E-mail</span>
+          <input type="text" id="name">
+        </label>
+        <!-- Connection  -->
+        <label class="form__select">
+          <span>Connection</span>
+          <select id="Connection">
+            <option value="telegram">Telegram</option>
+            <option value="whatsapp">WhatsApp</option>
+          </select>
+        </label>
+        <!-- Privacy policy  -->
+        <label class="form__checkbox">
+          <input type="checkbox" id="policy">
+          <a href="https://example.com/policy" target="_blank">Privacy policy</a>
+        </label>
+        <!-- Submit -->
+        <button class="form__submit">Submit</button>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
