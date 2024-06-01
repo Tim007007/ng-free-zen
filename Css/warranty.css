@@ -34,8 +34,14 @@ color: aqua;
 }
 
 .warranty__image-block {
-  height: 72vh;
+  height: 72vw;
   border: 1px solid #aaa;
   border-radius: 20px;
   overflow: hidden;
+}
+
+.warranty__image-block img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
 }
