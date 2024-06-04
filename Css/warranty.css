@@ -11,9 +11,9 @@
 /* warranty__text-block {} */
 
 .warranty__title {
-font-weight: 700;
-color: aqua;
-/* margin-bottom: 20px; */
+  font-weight: 700;
+  color: aqua;
+  /* margin-bottom: 20px; */
 }
 
 @media (min-width: 768px) {
