@@ -6,16 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZEN</title>
   <link rel="stylesheet" href="./Css/reset.css" />
+  <link rel="stylesheet" href="./Css/fonts.css" /> <!-- сделать  -->
   <link rel="stylesheet" href="./Css/global.css" />
-  <link rel="stylesheet" href="./Css/menu.css" />
   <link rel="stylesheet" href="./Css/header.css" />
+  <link rel="stylesheet" href="./Css/menu.css" />
   <link rel="stylesheet" href="./Css/burger.css" />
   <link rel="stylesheet" href="./Css/download.css" />
-  <link rel="stylesheet" href="./Css/cashback.css" />
-  <link rel="stylesheet" href="./Css/column.css" />
-  <link rel="stylesheet" href="./Css/cashback.css" />
   <link rel="stylesheet" href="./Css/warranty.css" />
-  <link rel="stylesheet" href="./Css/footer.css" />
+  <!-- функцию care добавить -->
+  <link rel="stylesheet" href="./Css/cashback.css" />
+    <!-- функцию clients добавить -->
+    <link rel="stylesheet" href="./Css/footer.css" />
+  <link rel="stylesheet" href="./Css/column.css" />
+  <link rel="stylesheet" href="./Css/modal.css" />
+  <link rel="stylesheet" href="./Css/form.css" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -299,7 +304,7 @@
       </div>
   </footer>
   <!-- Модальное окно -->
-  <div class="modal" id="modal">
+  <div class="modal active" id="modal">
     <div class="modal_body">
       <!-- Close -->
       <button class="modal__close" id="close">
@@ -310,24 +315,22 @@
       <!-- Form -->
       <form class="form" id="order">
         <!-- Name -->
-        <label class="form__input">
-          <span>Name</span>
-          <input type="text" id="name">
+        <label class="form__field">
+          <input type="text" placeholder="Name" id="name">
         </label>
         <!-- Tel. -->
-        <label class="form__input">
-          <span>Tel.</span>
-          <input type="text" id="name">
+        <label class="form__field">
+          <input type="text" placeholder="Tel." id="name">
         </label>
         <!-- E-mail -->
-        <label class="form__input">
-          <span>E-mail</span>
-          <input type="text" id="name">
+        <label class="form__field">
+          <input type="text" placeholder="E-mail" id="name">
         </label>
         <!-- Connection  -->
-        <label class="form__select">
+        <label class="form__field">
           <span>Connection</span>
           <select id="Connection">
+            <option value=""></option>
             <option value="telegram">Telegram</option>
             <option value="whatsapp">WhatsApp</option>
           </select>
