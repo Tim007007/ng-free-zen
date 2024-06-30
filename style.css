@@ -367,6 +367,16 @@ img {
   border: 1px solid #aaa;
 }
 
+.clients {
+  padding: 30px 15px;
+}
+
+.clients__brands {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .footer {
   padding: 30px 15px;
   color: #fff;
