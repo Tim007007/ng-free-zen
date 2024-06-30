@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -308,6 +307,38 @@ img {
   object-fit: cover;
 }
 
+.care {
+  padding: 30px 15px;
+}
+
+.care__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.care__title {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.care__copy {
+  margin-top: 10px;
+}
+
+.care__image-block {
+  height: 72vw;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.care__image-block img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
 .cashback {
   padding: 30px 15px;
 }
@@ -501,11 +532,5 @@ img {
   border: 1px solid #222;
   border-radius: 30px;
 }
-
-/* column добавить 
-
-clients добавить 
-
-care уточнить так же добавить или нет ? */
 
 /*# sourceMappingURL=style.css.map */
