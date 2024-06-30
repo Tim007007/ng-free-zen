@@ -1,4 +1,11 @@
-/* fonts */
+/* $font-path: "assets/fonts/Nunito";
+
+@include @mixin font_face(
+  "Nunito",
+  "assets/fonts/Nunito",
+  "Nunito-Regular",
+  400
+  ); */
 
 @font-face {
   font-family: "Nunito";
