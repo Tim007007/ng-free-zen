@@ -56,18 +56,18 @@ select {
   ); */
 @font-face {
   font-family: "Nunito";
-  src: url("../assets/fonts/Nunito/Nunito-Regular.woff2") format(woff2);
-  src: url("../assets/fonts/Nunito/Nunito-Regular.woff") format(woff);
-  src: url("../assets/fonts/Nunito/Nunito-Regular.ttf") format(truetype);
+  src: url("assets/fonts/Nunito/Nunito-Regular.woff2") format(woff2);
+  src: url("assets/fonts/Nunito/Nunito-Regular.woff") format(woff);
+  src: url("assets/fonts/Nunito/Nunito-Regular.ttf") format(truetype);
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Nunito";
-  src: url("../assets/fonts/Nunito/Nunito-Regular.woff2") format(woff2);
-  src: url("../assets/fonts/Nunito/Nunito-Regular.woff") format(woff);
-  src: url("../assets/fonts/Nunito/Nunito-Regular.ttf") format(truetype);
+  src: url("assets/fonts/Nunito/Nunito-Bold.woff2") format(woff2);
+  src: url("assets/fonts/Nunito/Nunito-Bold.woff") format(woff);
+  src: url("assets/fonts/Nunito/Nunito-Bold.ttf") format(truetype);
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -175,6 +175,58 @@ img {
   border-bottom: 1px solid #aaa;
 }
 
+.burger {
+  position: relative;
+  width: 30px;
+  height: 18px;
+  /* border: 1px dashed  orange; */
+}
+
+.burger.active::before {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  transition: all 2s;
+}
+
+.burger.active span {
+  display: none;
+}
+
+.burger.active::after {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+  transition: all 2s;
+}
+
+.burger::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.burger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
+
+.burger::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .download {
   padding: 30px 15px;
 }
@@ -234,22 +286,11 @@ img {
 /* warranty__text-block {} */
 .warranty__title {
   font-weight: 700;
-  color: aqua;
-  /* margin-bottom: 20px; */
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 26px;
 }
 
-@media (min-width: 768px) {
-  .warranty__title {
-    font-size: 40px;
-    color: red;
-  }
-}
-@media (min-width: 900px) {
-  .warranty__title {
-    font-size: 80px;
-    color: orange;
-  }
-}
 .warranty__copy {
   margin-top: 10px;
 }
@@ -339,9 +380,30 @@ img {
   margin-top: 10px;
 }
 
+.column img {
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+
+.column-title {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
+.column-list {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.column-item {
+  margin-top: 10px;
+}
+
 .modal {
   display: none;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .modal.active {
