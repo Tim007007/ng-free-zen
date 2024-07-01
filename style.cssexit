@@ -1,0 +1,22 @@
+/* Error: Only 4 arguments allowed, but 5 were passed.
+ *   ,--> scss\modal.scss
+ * 3 |   background: rgba(0, 0, 0, 0, 6);
+ *   |               ^^^^^^^^^^^^^^^^^^^ invocation
+ *   '
+ *   ,
+ * 1 | @function rgba($red, $green, $blue, $alpha) {
+ *   |           ================================= declaration
+ *   '
+ *   scss\modal.scss 3:15  @import
+ *   scss\index.scss 13:8  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Only 4 arguments allowed, but 5 were passed.\a   \250c \2500 \2500 > scss\\modal.scss\a 3 \2502    background: rgba(0, 0, 0, 0, 6);\d\a   \2502                ^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \2577 \a 1 \2502  @function rgba($red, $green, $blue, $alpha) {\a   \2502            \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   scss\\modal.scss 3:15  @import\a   scss\\index.scss 13:8  root stylesheet";
+}
