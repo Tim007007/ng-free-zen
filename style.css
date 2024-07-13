@@ -46,19 +46,19 @@ select {
 }
 
 @font-face {
-  font-family: "$family";
-  src: url("path/Nunito-Regular.woff2") format(woff2);
-  src: url("path/Nunito-Regular.woff") format(woff);
-  src: url("path/Nunito-Regular.ttf") format(truetype);
+  font-family: "Nunito";
+  src: url("path/Nunito-Regular.woff2") format("woff2");
+  src: url("path/Nunito-Regular.woff") format("woff");
+  src: url("path/Nunito-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "$family";
-  src: url("path/Nunito-Bold.woff2") format(woff2);
-  src: url("path/Nunito-Bold.woff") format(woff);
-  src: url("path/Nunito-Bold.ttf") format(truetype);
+  font-family: "Nunito";
+  src: url("path/Nunito-Bold.woff2") format("woff2");
+  src: url("path/Nunito-Bold.woff") format("woff");
+  src: url("path/Nunito-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
