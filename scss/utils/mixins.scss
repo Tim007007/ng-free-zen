@@ -1,16 +1,25 @@
-@mixin font_face(
- $path,
- $fileName,
- $family,
- $weight,
-) {
+@mixin font_face($path, $fileName, $family, $weight) {
   @font-face {
     font-family: $family;
-    src: url('#{$path}/#{$fileName}.woff2') format('woff2');
-    src: url('#{$path}/#{$fileName}.woff') format('woff');
-    src: url('#{$path}/#{$fileName}.ttf') format('truetype');
+    src: url("#{$path}/#{$fileName}.woff2") format("woff2");
+    src: url("#{$path}/#{$fileName}.woff") format("woff");
+    src: url("#{$path}/#{$fileName}.ttf") format("truetype");
     font-weight: $weight;
     font-style: normal;
     font-display: swap;
   }
+}
+
+@mixin image-border-line() {
+  border: 1px solid $image-border-color;
+}
+
+@mixin flex-column($gap) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+@mixin padding-standart() {
+  padding: 30px 15px;
 }

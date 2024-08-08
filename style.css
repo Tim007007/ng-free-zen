@@ -198,13 +198,11 @@ img {
   height: 100%;
 }
 
-/* .header__nav {} */
 .header__actions {
   margin-left: auto;
   display: flex;
   align-items: center;
   gap: 20px;
-  /* border: 1px dashed red; */
 }
 
 .header__lang {
@@ -528,5 +526,3 @@ img {
   border: 1px solid #222;
   border-radius: 30px;
 }
-
-/*# sourceMappingURL=style.css.map */
